@@ -1,0 +1,116 @@
+@charset "UTF8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #01252b;
+    background-image: url(img/teclado.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+@media screen and (max-width:599px) {
+    header {
+        background-color: #01252bc0;
+        display: flex;
+        height: 55px;
+        position: relative;
+        width: 100vw;
+    }
+
+    .logo{
+        display: flex;
+    }
+    
+    .menu-btn{
+        background: none;
+        border: none;
+        height: 40px;
+        position: absolute;
+        right: 20px;
+        top: 5px;
+        width: 40px;
+    }
+    .line{
+        background-color: white;
+        display: block;
+        height: 2px;
+        margin: 7px auto;
+        width: 38px;
+    }
+
+    .menu{
+        backdrop-filter: blur(10px);
+        height: 100vh;
+        left: 0;
+        position: absolute;
+        top: 55px;
+        width: 100vw;
+    }
+
+    .menu-list{
+        display: block;
+        list-style: none;
+        width: 100%;
+    }
+    .link {
+        background-color: #01252b;
+        border: 1px solid #025665;
+        padding: 20px;
+        transition: 0.5s;
+        width: 100%;
+    }
+
+    .link:hover {
+        background-color: #01252b;
+    }
+
+}   
+
+@media screen and (min-width:600px) {
+    header {
+        display: flex;
+        height: 55px;
+        width: 100vh;
+    }
+    .logo {
+        width: 40%;
+    }
+    .menu-btn {
+        display: none;
+    }
+    .menu {
+        align-items:center;
+        display: flex;
+        width: 60%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        width: 100%
+    }
+
+
+
+}
