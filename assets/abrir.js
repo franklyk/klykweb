@@ -1,14 +1,32 @@
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i) {
-    acc[i].addEventListener('click', function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if(panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
-    });
+const btnMenu = document.getElementById('menu-btn');
+function openMenu(){
+    const header = document.getElementById('header');
+    header.classList.toggle('active');
 }
+btnMenu.addEventListener('click', openMenu);
+
+
+
+const btnMobile1 = document.getElementById('botao-1');
+function subMenu1(){
+    const menuList = document.getElementById('submenu1');
+    menuList.classList.toggle('active');
+}
+btnMobile1.addEventListener('click', subMenu1);
+
+const btnMobile2 = document.getElementById('botao-2');
+function subMenu2(){
+    const menuList = document.getElementById('submenu2');
+    menuList.classList.toggle('active');
+}
+btnMobile2.addEventListener('click', subMenu2);
+
+const btnMobile3 = document.getElementById('botao-3');
+function subMenu3(){
+    const menuList = document.getElementById('submenu3');
+    menuList.classList.toggle('active');
+}
+btnMobile3.addEventListener('click', subMenu3);
+
+
+

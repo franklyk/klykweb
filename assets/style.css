@@ -40,7 +40,7 @@ a {
         border: none;
         height: 40px;
         position: absolute;
-        right: 20px;
+        right: 30px;
         top: 5px;
         width: 40px;
     }
@@ -49,16 +49,41 @@ a {
         display: block;
         height: 2px;
         margin: 7px auto;
+        transform-origin: center;
+        transition: 0.8s;
         width: 38px;
     }
 
-    .menu{
+    #header.active .line:nth-child(1){
+        background-color: red;
+        transform: translateY(9px) rotate(315deg);
+    }
+
+    #header.active .line:nth-child(2){
+        background-color: red;
+        width: 0px;
+    }
+
+    #header.active .line:nth-child(3){
+        background-color: red;
+        transform: translateY(-9px) rotate(-315deg);
+    }
+
+    #menu{
         backdrop-filter: blur(10px);
-        height: calc(100vh - 55px);
+        height: 0px;
         left: 0;
+        overflow-y: hidden;
         position: absolute;
         top: 55px;
+        transition: 0.7s;
+        visibility: hidden;
         width: 100vw;
+    }
+
+    #header.active #menu{
+        height: calc(100vh - 55px);
+        visibility: visible;
     }
 
     .menu-list{
@@ -69,37 +94,41 @@ a {
 
     .accordion {
         background-color: #01252b;
-        border: 1px solid #025665;
+        border-bottom: 3px solid #025665;
         color: white;
+        cursor: pointer;
         font-size: 18px;
+        max-height: 63px;
         padding: 20px;
         text-align: left;
-        transition: 0.7s;
-        width: 100vw;
-    }
-    .panel{
-        background-color: #01252b;
-        border: 1px solid #025665;
-        color: white;
-        max-height: 100%;
-        overflow: hidden;
-        padding: 20px;
-        transition: 0.8s;
-    }
-
-    .link {
-        background-color: #01252b;
-        border: 1px solid #025665;
-        font-size: 18px;
-        padding: 20px;
-        transition: 0.5s;
         width: 100%;
     }
-
-    .link:hover {
+    .panel {
         background-color: #01252b;
+        border-bottom: 1px solid #025665;
+        color: white;
+        display: block;
+        height: 0px;
+        margin: 0px;
+        overflow-y: hidden;
+        transition: 0.5s;
+        visibility: hidden;
+        
     }
 
+    #submenu1.active #panel-1 {
+        height: 80px;
+        visibility: visible;
+    }
+
+    #submenu2.active #panel-2 {
+        height: 80px;
+        visibility: visible;
+    }
+    #submenu3.active #panel-3 {
+        height: 80px;
+        visibility: visible;
+    }
 }   
 
 @media screen and (min-width:600px) {
