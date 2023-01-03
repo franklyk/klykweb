@@ -1,34 +1,145 @@
 @charset "UTF8";
-
-* {
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #74979e93;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #74979e;
+}
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
+    background-attachment: fixed;
     background-color: #01252b;
     background-image: url(img/teclado.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
+    overflow-x: hidden;
     width: 100vw;
 }
-
 a {
     text-decoration: none;
     color: white;
 }
+.capa {
+    align-items: center;
+    background: transparent;
+    display: flex;
+    height: calc(100vh - 54px);
+    justify-content: center;
+    width: 100%;
+}
+.capa img {
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+.main {
+    backdrop-filter: blur(40px);
+    background-color: #8db2bb;
+    /*background-color: #01252bc0;*/
+    border-radius: 1rem 1rem 0px 0px;
+    color: #ffffff;
+    font-weight: bolder;
+    line-height: 1.7rem;
+    margin: auto;
+    text-align: justify;
+    padding: 20px; 
+    position: relative;
+    width: 80%;
+} 
+
+.main > h1 {
+    color: #01252bc0;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #01252bc0;
+}
+.main hr {
+    margin: 30px;
+}
+.main p {
+    color: #01252bc0;
+    /*color: #8db2bb;*/
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    margin: 30px;
+    text-indent: 35px;
+}
+
+.messg{
+    background-color: #8db2bb;
+    border-radius: 0px 0px 15px 15px;
+    margin: 10px auto;
+    width: 60%;
+}
+
+fieldset {
+    border: 2px solid #01252bc0;
+    border-radius: 0px 0px 15px 15px;
+    text-align: center;
+}
+legend {
+    color: #01252bc0;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 1px #01252bc0;
+}
+.contact{
+    display: flex;
+    gap: 1rem;
+    margin: 0px 0px 30px 34px;
+    max-width: 92%;
+}
+#nome, #email {
+    font-size: 1.1rem;
+    padding: 10px;
+    width: 49%;
+}
+
+#submit{
+    background-color: #01252b;
+    border-radius: 0.7rem;
+    color: white;
+    font-size: 1.6rem;
+    height: 40px;
+    margin: 30px;
+    width: 100px;
+}
+#submit:hover{
+    background-color: #02404b;
+
+}
+.footer{
+    align-items: center; 
+    background-color: #032025b4;
+    color: white;
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    letter-spacing: 2.5px;
+    text-shadow: 1px 1px 1px white;
+    width: 100%;
+} 
 
 
 @media screen and (max-width:599px) {
-    header {
+    #header {
         background-color: #01252bc0;
         display: flex;
         height: 55px;
         position: relative;
         width: 100vw;
+        z-index: 5;
     }
 
     .logo{
@@ -103,6 +214,7 @@ a {
         padding: 12px 18px;
         transition: 0.5s;
         width: 100%;
+        z-index: 5;
     }
 
     .links:hover{
@@ -139,6 +251,7 @@ a {
         overflow-y: hidden;
         transition: 0.5s;
         visibility: hidden;
+        z-index: 5;
         
     }
 
@@ -154,6 +267,11 @@ a {
         height: 140px;
         visibility: visible;
     }
+
+    .capa img{
+        width: 80%;
+    }
+    
 }   
 @media screen and (min-width:600px) {
     .menu-btn{
@@ -161,7 +279,7 @@ a {
     }
     #header{
         align-items: center;
-        background-color: #01252b;
+        background-color: #01252bc0;
         display: flex;
         height: 54px;
         justify-content: space-between;
@@ -205,6 +323,7 @@ a {
         transition: 0.7s;
         visibility: hidden;
         top: 54px;
+        z-index: 5;
     }
     
     .links{
@@ -231,4 +350,21 @@ a {
         height: 192px;
         visibility: visible;
     }
-}
+    .capa img {
+        width: 60%;
+    }
+    .main {
+        width: 60%;
+    } 
+
+    .main > h1 {
+        
+    }
+    .main p {
+        
+    }
+
+    .footer{
+        
+    } 
+} 
