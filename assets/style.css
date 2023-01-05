@@ -31,6 +31,78 @@ a {
     text-decoration: none;
     color: white;
 }
+
+#fade {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0,0,0,0.6);
+    height: 100vh;
+    opacity: 1;
+    pointer-events: all;
+    position: fixed;
+    transition: 0.7s;
+    width: 100vw;
+    z-index: 100;
+} 
+#modal{
+    background-color: #74979e80;
+    border-radius: 10px;
+    left: 50%;
+    max-width: 500px;
+    opacity: 1;
+    padding: 0px 20px 40px 20px;
+    pointer-events: all;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: 0.7s;
+    top: 50%;
+    width: 95%;
+    z-index: 100;
+}
+#modal.hide,
+#fade.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+#modal.hide{
+    top: 0;
+}
+.modal-header{
+    padding: 20px;
+    text-align: center;
+}
+.modal-header img {
+    padding: 40px 0px;
+    width: 60%;
+}
+.modal-header h1 {
+    font-size: 3em;
+}
+.inputs{
+    width: 100%;
+}
+.inputs > #email, #senha {
+    font-size: 1.1rem;
+    width: 100%;
+}
+.modal-buttons{
+    width: 100%;
+    text-align: center;
+}
+.enviar, .cadastrar{
+    background-color: #01252b;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.3rem;
+    height: 40px;
+    padding: 10px;
+    transition: 0.2s;
+}
+.enviar:hover, .cadastrar:hover{
+    background-color: #007bff78;
+}
+
 .capa {
     align-items: center;
     background: transparent;
@@ -46,7 +118,6 @@ a {
 .main {
     backdrop-filter: blur(40px);
     background-color: #8db2bb;
-    /*background-color: #01252bc0;*/
     border-radius: 1rem 1rem 0px 0px;
     color: #ffffff;
     font-weight: bolder;
@@ -94,16 +165,8 @@ a {
     width: 60%;
 }
 
-fieldset {
-    border: 2px solid #01252bc0;
-    border-radius: 0px 0px 15px 15px;
-    text-align: center;
-}
-legend {
-    color: #01252bc0;
-    font-size: 1.5rem;
-    text-shadow: 1px 1px 1px #01252bc0;
-}
+/* 
+
 .contact{
     display: flex;
     gap: 1rem;
@@ -128,7 +191,7 @@ legend {
 #submit:hover{
     background-color: #02404b;
 
-}
+} */
 .footer{
     align-items: center; 
     background-color: #032025b4;
@@ -140,6 +203,49 @@ legend {
     text-shadow: 1px 1px 1px white;
     width: 100%;
 } 
+
+#mnsg{
+    background-color: #74979e;
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 450px;
+    padding: 20px;
+    width: 90%;
+}
+fieldset {
+    border: 2px solid #01252bc0;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+legend {
+    background-color: #74979e;
+    border-radius: 6px;
+    color: #01252bc0;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 1px #01252bc0;
+    width: 60%;
+}
+#nome {
+    border-radius: 6px;
+    margin: 20px 0px;
+    padding: 6px;
+    width: 100%;
+}
+#email {
+    border-radius: 6px;
+    letter-spacing: 2px;
+    margin: 0px 0px 20px 0px;
+    padding: 6px;
+    width: 100%;
+}
+textarea{
+    border-radius: 6px;
+    letter-spacing: 2px;
+    outline: none;
+    padding: 20px;
+    width: 100%;
+}
 
 
 @media screen and (max-width:599px) {
