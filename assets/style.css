@@ -115,10 +115,18 @@ a {
     backdrop-filter: blur(10px);
     border-radius: 10px;
 }
+.section{
+    background-color: #8db2bb;
+    border-radius: 1rem;
+    margin: 20px; 
+    padding: 20px; 
+
+
+
+}
 .main {
     backdrop-filter: blur(40px);
-    background-color: #8db2bb;
-    border-radius: 1rem 1rem 0px 0px;
+    border-radius: 1rem;
     color: #ffffff;
     font-weight: bolder;
     line-height: 1.7rem;
@@ -158,40 +166,6 @@ a {
     width: 80%;
 }
 
-.messg{
-    background-color: #8db2bb;
-    border-radius: 0px 0px 15px 15px;
-    margin: 10px auto;
-    width: 60%;
-}
-
-/* 
-
-.contact{
-    display: flex;
-    gap: 1rem;
-    margin: 0px 0px 30px 34px;
-    max-width: 92%;
-}
-#nome, #email {
-    font-size: 1.1rem;
-    padding: 10px;
-    width: 49%;
-}
-
-#submit{
-    background-color: #01252b;
-    border-radius: 0.7rem;
-    color: white;
-    font-size: 1.6rem;
-    height: 40px;
-    margin: 30px;
-    width: 100px;
-}
-#submit:hover{
-    background-color: #02404b;
-
-} */
 .footer{
     align-items: center; 
     background-color: #032025b4;
@@ -208,7 +182,6 @@ a {
     background-color: #74979e;
     border-radius: 10px;
     margin: 30px auto;
-    max-width: 450px;
     padding: 20px;
     width: 90%;
 }
@@ -227,15 +200,19 @@ legend {
     width: 60%;
 }
 #nome {
+    border: none;
     border-radius: 6px;
     margin: 20px 0px;
+    outline: none;
     padding: 6px;
     width: 100%;
 }
-#email {
+#email2 {
+    border: none;
     border-radius: 6px;
     letter-spacing: 2px;
     margin: 0px 0px 20px 0px;
+    outline: none;
     padding: 6px;
     width: 100%;
 }
@@ -389,6 +366,26 @@ textarea{
     .capa img{
         width: 80%;
     }
+    #mnsg {
+        background-color: #8db2bb;
+        border-radius: 1rem;
+        margin: 10px auto;
+        width: 80%;
+    }
+    fieldset {
+        border: 2px solid #01252bc0;
+        border-radius: 1rem;
+        padding: 20px;
+        text-align: center;
+    }
+    legend {
+        background-color: #74979e;
+        border-radius: 6px;
+        color: #01252bc0;
+        font-size: 1.3rem;
+        text-shadow: 1px 1px 1px #01252bc0;
+        width: 60%;
+    }
 
     
 }   
@@ -476,14 +473,29 @@ textarea{
         width: 60%;
     } 
 
-    .main > h1 {
-        
+    #mnsg {
+        background-color: #8db2bb;
+        border-radius: 1rem;
+        margin: 10px auto;
+        width: 60%;
     }
-    .main p {
-        
+    fieldset {
+        border: 2px solid white;
+        border-radius: 15px;
+        padding: 20px;
+        text-align: center;
     }
-
-    .footer{
-        
-    } 
+    legend {
+        background-color: #74979e;
+        border-radius: 6px;
+        color: #01252bc0;
+        font-size: 1.3rem;
+        padding: 15px;
+        text-shadow: 1px 1px 1px #01252bc0;
+        width: auto;
+    }
+    textarea{
+        border: none;
+    }
+     
 } 
