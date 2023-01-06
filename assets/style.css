@@ -31,7 +31,62 @@ a {
     text-decoration: none;
     color: white;
 }
-
+.capa {
+    align-items: center;
+    background: transparent;
+    display: flex;
+    height: calc(100vh - 54px);
+    justify-content: center;
+    width: 100%;
+}
+.capa img {
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+.section{
+    background-color: #8db2bb;
+    border-radius: 1rem;
+    margin: 20px; 
+    padding: 20px; 
+}
+.main {
+    backdrop-filter: blur(40px);
+    border-radius: 1rem;
+    color: #ffffff;
+    font-weight: bolder;
+    line-height: 1.7rem;
+    margin: auto;
+    text-align: justify;
+    padding: 20px; 
+    position: relative;
+    width: 80%;
+} 
+.main > h1, h2, h3,h4 {
+    color: #01252bc0;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #01252bc0;
+}
+.main hr {
+    margin: 30px;
+}
+.main p {
+    color: #01252bc0;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    margin: 30px;
+    text-indent: 35px;
+}
+.list-ul{
+    color: #01252bc0;
+    font-size: 1.3rem;
+    list-style: none;
+}
+.div-list{
+    margin: auto;
+    width: 80%;
+}
 #fade {
     backdrop-filter: blur(10px);
     background-color: rgba(0,0,0,0.6);
@@ -42,8 +97,7 @@ a {
     transition: 0.7s;
     width: 100vw;
     z-index: 100;
-} 
-#modal{
+} #modal{
     background-color: #74979e80;
     border-radius: 10px;
     left: 50%;
@@ -102,70 +156,6 @@ a {
 .enviar:hover, .cadastrar:hover{
     background-color: #007bff78;
 }
-
-.capa {
-    align-items: center;
-    background: transparent;
-    display: flex;
-    height: calc(100vh - 54px);
-    justify-content: center;
-    width: 100%;
-}
-.capa img {
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-}
-.section{
-    background-color: #8db2bb;
-    border-radius: 1rem;
-    margin: 20px; 
-    padding: 20px; 
-
-
-
-}
-.main {
-    backdrop-filter: blur(40px);
-    border-radius: 1rem;
-    color: #ffffff;
-    font-weight: bolder;
-    line-height: 1.7rem;
-    margin: auto;
-    text-align: justify;
-    padding: 20px; 
-    position: relative;
-    width: 80%;
-} 
-
-.main > h1, h2, h3,h4 {
-    color: #01252bc0;
-    margin-bottom: 10px;
-    padding: 10px;
-    text-align: center;
-    text-shadow: 1px 1px 1px #01252bc0;
-}
-.main hr {
-    margin: 30px;
-}
-.main p {
-    color: #01252bc0;
-    /*color: #8db2bb;*/
-    font-size: 1.3rem;
-    letter-spacing: 0.5px;
-    margin: 30px;
-    text-indent: 35px;
-}
-.list-ul{
-    color: #01252bc0;
-    font-size: 1.3rem;
-    list-style: none;
-}
-
-.div-list{
-    margin: auto;
-    width: 80%;
-}
-
 .footer{
     align-items: center; 
     background-color: #032025b4;
@@ -177,7 +167,6 @@ a {
     text-shadow: 1px 1px 1px white;
     width: 100%;
 } 
-
 #mnsg{
     background-color: #74979e;
     border-radius: 10px;
@@ -223,8 +212,6 @@ textarea{
     padding: 20px;
     width: 100%;
 }
-
-
 @media screen and (max-width:599px) {
     #header {
         align-items: center;
@@ -235,12 +222,10 @@ textarea{
         width: 100vw;
         z-index: 5;
     }
-
     .logo{
         align-items: center;
         display: flex;
     }
-    
     .menu-btn{
         background: none;
         border: none;
@@ -260,22 +245,18 @@ textarea{
         transition: 0.8s;
         width: 38px;
     }
-
     #header.active .line:nth-child(1){
         background-color: red;
         transform: translateY(9px) rotate(315deg);
     }
-
     #header.active .line:nth-child(2){
         background-color: red;
         width: 0px;
     }
-
     #header.active .line:nth-child(3){
         background-color: red;
         transform: translateY(-9px) rotate(-315deg);
     }
-
     #menu{
         backdrop-filter: blur(10px);
         height: 0px;
@@ -287,37 +268,32 @@ textarea{
         visibility: hidden;
         width: 100vw;
     }
-
     #header.active #menu{
         height: calc(100vh - 55px);
         visibility: visible;
     }
-
     #nav {
         display: block;
     }
-
     .menu-list{
         display: block;
         list-style: none;
         width: 100%;
     }
-
     .links{
         cursor: pointer;
         font-size: 1em;
         padding: 12px 18px;
+        text-align: left;
         transition: 0.5s;
         width: 100%;
         z-index: 5;
     }
-
     .links:hover{
         background-color: #025665;
         border-radius: 10px;
         box-shadow: inset 0px 0px 10px 5px #01252b;
     }
-
     .link-nav {
         background-color: #01252bc0;
         border: none;
@@ -326,7 +302,7 @@ textarea{
         font-size: 1em;
         max-height: 63px;
         padding: 18px;
-        text-align: right;
+        text-align: left;
         transition: 0.5s;
         width: 100%;
     }
@@ -335,7 +311,6 @@ textarea{
         border-radius: 10px;
         box-shadow: inset 0px 0px 10px 5px #01252b;
     }
-
     .panel {
         background-color: #01252bc0;
         border-bottom: 1px solid #025665;
@@ -349,7 +324,6 @@ textarea{
         z-index: 5;
         
     }
-
     #submenu1.active #panel-1 {
         height: 140px;
         visibility: visible;
@@ -362,7 +336,6 @@ textarea{
         height: 140px;
         visibility: visible;
     }
-
     .capa img{
         width: 80%;
     }
@@ -386,8 +359,6 @@ textarea{
         text-shadow: 1px 1px 1px #01252bc0;
         width: 60%;
     }
-
-    
 }   
 @media screen and (min-width:600px) {
     .menu-btn{
@@ -412,6 +383,7 @@ textarea{
         width: 100%;
     }
     #menu-list{
+        
         display: flex;
         justify-content: space-around;
         list-style: none;
@@ -441,7 +413,6 @@ textarea{
         top: 54px;
         z-index: 5;
     }
-    
     .links{
         background-color: #01252b;
         font-size: 1.3em;
@@ -453,7 +424,6 @@ textarea{
         background-color: #025665;
         box-shadow: inset 1px 1px 5px 3px #01252b;
     }
-
     #submenu1.active #panel-1{
         height: 192px;
         visibility: visible;
@@ -466,13 +436,82 @@ textarea{
         height: 192px;
         visibility: visible;
     }
+    #fade {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0,0,0,0.6);
+    height: 100vh;
+    opacity: 1;
+    pointer-events: all;
+    position: fixed;
+    transition: 0.7s;
+    width: 100vw;
+    z-index: 100;
+    }  
+    #modal{
+        background-color: #74979e80;
+        border-radius: 10px;
+        left: 50%;
+        max-width: 500px;
+        opacity: 1;
+        padding: 0px 20px 40px 20px;
+        pointer-events: all;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        transition: 0.7s;
+        top: 50%;
+        width: 95%;
+        z-index: 100;
+    } 
+    #modal.hide,
+    #fade.hide{
+        opacity: 0;
+        pointer-events: none;
+    }
+    #modal.hide{
+        top: 0;
+    }
+    .modal-header{
+        padding: 20px;
+        text-align: center;
+    }
+    .modal-header img {
+        padding: 40px 0px;
+        width: 60%;
+    }
+    .modal-header h1 {
+        font-size: 3em;
+    }
+    .inputs{
+        width: 100%;
+    }
+    .inputs > #email, #senha {
+        font-size: 1.1rem;
+        width: 100%;
+    }
+    .modal-buttons{
+        width: 100%;
+        text-align: center;
+    }
+    .enviar, .cadastrar{
+        background-color: #01252b;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        cursor: pointer;
+        font-size: 1.3rem;
+        height: 40px;
+        padding: 10px;
+        transition: 0.2s;
+    }
+    .enviar:hover, .cadastrar:hover{
+        background-color: #007bff78;
+    } 
     .capa img {
         width: 60%;
     }
     .main {
         width: 60%;
     } 
-
     #mnsg {
         background-color: #8db2bb;
         border-radius: 1rem;
@@ -497,5 +536,4 @@ textarea{
     textarea{
         border: none;
     }
-     
 } 
