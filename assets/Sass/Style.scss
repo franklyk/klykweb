@@ -1,0 +1,263 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Moirai+One&family=Work+Sans:wght@100;300;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family= Zen+Maru+Gothic:wght@300;400;500;700;900 & display =swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+
+$color-blue-light: #00778060;
+$color-dark: #88888860;
+$color-green: #004952;
+$color-green-water: #00495259;
+$color-green-dark: #09130991;
+$color-red: #8f0000;
+$color-white: #fff;
+$color-white-dark: #bdbdbddc;
+
+
+// $font-logo: 'Moirai One', cursive;
+// $font-text: 'Zen Maru Gothic', sans-serif;
+// $font-paragraph: 'Work Sans', sans-serif;
+$font-text: 'Turret Road', cursive;
+
+$font-weight-sub: 100;
+$font-weight-min: 200;
+$font-weight-normal: 300;
+$font-weight-medium: 400;
+$font-weight-big: 500;
+$font-weight-large: 600;
+$font-weight-max: 700;
+$font-weight-extra: 800;
+$font-weight-exta-max: 900;
+
+
+
+@mixin fontConfig($vals, $valw){
+    color: $color-white;
+    font-family: $font-text;
+    font-size: $vals;
+    font-weight: $valw;
+    text-shadow: 1px 1px 1px $color-green-dark;
+}
+
+@mixin config(){
+    border: 1px solid $color-white;
+}
+
+::-webkit-scrollbar{
+    background: transparent;
+    opacity: 0;
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: transparent;
+    opacity: 0;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: transparent;
+    border: 3px solid $color-white-dark;
+    border-radius: 3px;
+    cursor: pointer;
+    opacity: 0;
+    width: 10px;
+    &:hover{
+        background: $color-white-dark;
+        border: none;
+    }
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+html, body{
+    background-attachment: fixed;
+    background-color: #0000ff49;
+    background-image: url(../Img/teclado.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+ul, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.clear{
+    clear: both;
+}
+.division_line{
+    background: black;
+    margin: 10px auto;
+    width: 50%;
+}
+.force{
+    @include fontConfig(1.4rem, $font-weight-max);
+    padding: 10px 20px;
+    text-decoration: underline;
+}
+.header{
+    
+    height: 100%;
+    position: relative;
+    .logo{
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        h1{
+            span{
+                font-size: 6.5rem;
+                text-shadow: 2px 2px 2px $color-green-dark;
+            }
+            @include fontConfig(3rem, $font-weight-exta-max);
+            letter-spacing: 4px;
+            text-shadow: 2px 2px 3px $color-green-dark; 
+        }
+    }
+    a{
+        backdrop-filter: blur(10px);
+        color: $color-white;
+        float: right;
+        font-size: 1.3rem;
+        padding:  2rem 2rem 0 0;
+        text-shadow: 1px 1px 3px $color-green-dark;
+    }
+    
+}
+
+.general_container{
+    backdrop-filter: blur(10px);
+    border: 1px solid $color-dark;
+    border-radius: 6px;
+    margin: 5px auto;
+    padding: 15px;
+    width: 80%;
+    .container_information{
+        backdrop-filter: blur(30px);
+        background: $color-blue-light;
+        border-radius: 6px;
+        .title_site,
+        .sub_title{
+            @include fontConfig(1.6rem, $font-weight-exta-max);
+            letter-spacing: 3px;
+            padding: 20px 10px;
+            text-align: center;
+            text-decoration: underline;
+            text-shadow: 1px 1px 1px $color-green-dark
+        }
+
+        .text_site{
+            @include fontConfig(1.2rem, $font-weight-sub);
+            letter-spacing: 3px;
+            line-height: 2rem;
+            margin: 0 10px;
+            text-align: justify;
+            text-indent: 30px;
+            text-shadow: 3px 3px 1px $color-green-dark;
+        }   
+        .container_img{
+            border: 1px solid $color-dark;
+            box-shadow: inset 0 0 1px 3px $color-dark;
+            width: 100%;
+            padding: 10px 10px;
+            img{
+                width: 100%;
+            }
+            span{
+                font-size: 1.1rem;
+                color: $color-white-dark;
+                letter-spacing: 2px;
+                padding-left: 20px;
+                text-decoration: underline
+            }
+        }
+        .div_list{
+            .list_site{
+                @include fontConfig(1.5rem, $font-weight-medium);
+                letter-spacing: 2px;
+                line-height: 2rem;
+                margin: 0 10px;
+                text-align: justify;
+                text-indent: 5px;
+                text-shadow: 2px 2px 1px $color-green-dark;
+            }
+        }
+    }
+    
+}
+.footer{
+    height: auto;
+    text-align: center;
+    width: 100%;
+    .comment{
+        padding: 50px 0;
+    }
+    .footer_h1{
+        @include fontConfig( 2rem, $font-weight-max);
+    }
+    .footer_p{
+        @include fontConfig(1.3rem, $font-weight-max);
+    }
+    .templates{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        a{
+            width: 100%;
+            img{
+                border-radius: 6px;
+                padding: 15px;
+                transition: .5s;
+                width: 30%;
+                &:hover{
+                    box-shadow: inset 0 0 20px $color-white-dark;
+                    width: 33%;
+                }
+            }
+        }
+    }
+    .socials{
+        align-items: center;
+        background: $color-blue-light;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-bottom: 50px;
+        width: 100%;
+        .whatsapp{
+            background: $color-white-dark;
+            border-radius: 6px;
+            margin: 3px 0;
+            padding: 3px 5px;
+            i{
+                color: green;
+                font-size: 2rem;
+            }
+        }
+        .footer_email{
+            background: $color-white-dark;
+            border-radius: 6px;
+            margin: 3px 0;
+            padding: 3px 5px;
+            i{
+                color: $color-red;
+                font-size: 2rem;
+            }
+        }
+    }
+    .footer_end{background: $color-green-water;
+        height: 100px;
+        width: 100%;
+
+    }
+}
