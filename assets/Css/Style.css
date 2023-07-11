@@ -77,19 +77,12 @@ a {
   position: relative;
 }
 .header .logo {
-  left: 50%;
+  left: 15%;
   position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 20%;
 }
-.header .logo h1 {
-  color: #fff;
-  font-family: "Turret Road", cursive;
-  font-size: 3rem;
-  font-weight: 900;
-  text-shadow: 1px 1px 1px rgba(9, 19, 9, 0.568627451);
-  letter-spacing: 4px;
-  text-shadow: 2px 2px 3px rgba(9, 19, 9, 0.568627451);
+.header .logo img {
+  width: 500px;
 }
 .header .logo h1 span {
   font-size: 6.5rem;

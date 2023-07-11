@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="62.82407mm"
+   height="33.579346mm"
+   viewBox="0 0 62.82407 33.579346"
+   version="1.1"
+   id="svg5"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient2485">
+      <stop
+         style="stop-color:#a8cbfe;stop-opacity:1;"
+         offset="0.08262713"
+         id="stop2481" />
+      <stop
+         style="stop-color:#ffffc3;stop-opacity:1;"
+         offset="0.97669494"
+         id="stop2483" />
+    </linearGradient>
+    <radialGradient
+       xlink:href="#linearGradient2485"
+       id="radialGradient2487"
+       cx="106.93297"
+       cy="133.33075"
+       fx="106.93297"
+       fy="133.33075"
+       r="31.412035"
+       gradientTransform="matrix(2.7273183,0.06503739,-0.01992788,0.8356676,-106.52933,131.497)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     id="layer1"
+     style="display:inline"
+     transform="translate(-75.520938,-116.54108)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:38.1px;line-height:0.582083px;font-family:Impact;-inkscape-font-specification:'Impact Condensed';text-align:end;text-anchor:end;display:inline;opacity:1;mix-blend-mode:lighten;fill:url(#radialGradient2487);fill-opacity:1;stroke-width:0.265;stroke-dasharray:none;paint-order:markers stroke fill"
+       x="138.12177"
+       y="146.66017"
+       id="text236"><tspan
+         id="tspan234"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-family:Impact;-inkscape-font-specification:'Impact Condensed';text-align:end;text-anchor:end;fill:url(#radialGradient2487);fill-opacity:1;stroke-width:0.265;stroke-dasharray:none;paint-order:markers stroke fill"
+         x="138.12177"
+         y="146.66017">klyk</tspan></text>
+  </g>
+</svg>
