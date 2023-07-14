@@ -77,16 +77,14 @@ a {
   position: relative;
 }
 .header .logo {
-  left: 15%;
+  left: 40%;
   position: absolute;
-  top: 20%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  width: 300px;
 }
-.header .logo img {
-  width: 500px;
-}
-.header .logo h1 span {
-  font-size: 6.5rem;
-  text-shadow: 2px 2px 2px rgba(9, 19, 9, 0.568627451);
+.header .logo .img {
+  width: 100%;
 }
 .header a {
   backdrop-filter: blur(10px);

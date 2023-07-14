@@ -110,18 +110,13 @@ a{
     height: 100%;
     position: relative;
     .logo{
-        left: 50%;
+        left: 40%;
         position: absolute;
-        top: 50%;
+        top: 40%;
         transform: translate(-50%, -50%);
-        h1{
-            span{
-                font-size: 6.5rem;
-                text-shadow: 2px 2px 2px $color-green-dark;
-            }
-            @include fontConfig(3rem, $font-weight-exta-max);
-            letter-spacing: 4px;
-            text-shadow: 2px 2px 3px $color-green-dark; 
+        width: 300px;
+        .img{
+            width: 100%;
         }
     }
     a{
